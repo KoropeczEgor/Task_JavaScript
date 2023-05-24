@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/index.min.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="promo">
+                <h1 class="promo__header">
+                    Рассчитайте стоимость <br>
+                     автомобиля в лизинг
+                </h1>
+
+                <form class="promo__forma">
+                    
+                    <div class="promo__forma__wrap">
+                        <div class="promo__forma__text">Стоимость автомобиля</div>
+                      <div class="promo__forma__wrapper">
+                        <input id="rangevalue" class="promo__forma__value" type="number" min="30000" max="10000000"/>
+                        <div class="promo__forma__wrapper__slider">
+                          <input id="price" type="range" class="promo__forma__input" min="30000" max="10000000" step="1"/>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                        <div class="promo__forma__wrap">
+                            <div class="promo__forma__text">Первоначальный взнос</div>
+                      <div class="promo__forma__wrapper">
+                        <input id="rangeval" class="promo__forma__value" type="number" min="30000" max="5000000"/>
+                        <div class="promo__forma__wrapper__slider">
+                          <input id="contribution" type="range" class="promo__forma__input" min="30000" max="5000000" step="1"/>
+                        </div>
+                      </div>
+                        </div>
+                      
+
+                      <div class="promo__forma__wrap">
+                        <div class="promo__forma__text">Срок лизинга</div>
+                        <div class="promo__forma__wrapper">
+                          <input id="rang" class="promo__forma__value" min="1" max="96" type="number"/>
+                          <div class="promo__forma__wrapper__slider">
+                            <input id="skrok" type="range" class="promo__forma__input" min="0" max="96" step="1"/>
+                          </div>
+                        </div>
+                      </div>
+                      
+                </form>
+
+                <div class="promo__info">
+
+                    <div class="promo__info-treaty">
+                        <h2 class="promo__info-title">Сумма договора лизинга</h2>
+                        <div class="promo__info-price" id="priceSumma">0 <span>₽</span></div>
+                    </div>
+
+                    <div class="promo__info-treaty">
+                        <h2 class="promo__info-title">Ежемесячный платеж от</h2>
+                        <div class="promo__info-price" id="resultat">0 <span>₽</span></div>
+                    </div>
+
+                    <button class="button">Оставить заявку</button>
+
+                </div>
+
+        </div>
+    </main>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
