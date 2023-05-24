@@ -1,0 +1,96 @@
+.promo{
+    padding: 213px 48px;
+    &__header{
+        font-weight: 900;
+        font-size: 54px;
+
+        color: #111111;
+
+        text-align: left;
+
+        margin-bottom: 32px;
+    }
+    &__forma{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 44px;
+
+        &__wrap{
+            flex-direction: column;
+            justify-content: flex-start;
+
+            width: 100%;
+
+            margin-right: 32px;
+            &:nth-child(3){
+                margin-right: 0;
+            }
+        }
+        &__text{
+            font-weight: 400;
+            font-size: 16px;
+
+            color: #575757;
+
+            margin-bottom: 24px;
+        }
+        &__wrapper {
+            width: 100%;
+        }
+        &__value{
+            width: 100%;
+            height: 68px;
+            background: #F3F3F4;
+            border-radius: 16px;
+            border: 0;
+            font-size: 30px;
+            font-weight: 900;
+            color: #575757;
+            outline: none;
+            padding-left: 15px;
+        }
+        &__wrapper__slider {
+            background: #f4f4f4;
+            border-radius: 8px;
+            width: 100%;
+            height: 20px;
+            margin-top: 10px;
+        }
+        &__input{ 
+            width: 100%;
+            background: orange;
+            border-radius: 10px;
+        	height: 10px;
+            -webkit-appearance: none;
+            outline: none;
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background: rgba(254, 174, 25, 0.819);
+                box-shadow: 0 0 2px #222;
+            }
+        }
+    }
+    &
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-title{
+            font-weight: 400;
+            font-size: 16px;
+            color: #575757;
+            margin-bottom: 8px;
+        }
+        &-price{
+            font-weight: 900;
+            font-size: 54px;
+            color: #333333;
+        }
+        
+    }
+}

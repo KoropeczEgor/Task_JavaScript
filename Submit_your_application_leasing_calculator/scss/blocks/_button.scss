@@ -1,0 +1,19 @@
+.button{
+    width: 426px;
+    height: 68px;
+    background: #FF9514;
+    font-weight: 900;
+    font-size: 24px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 3px 3px 20px #FF9514;
+        border: none;
+    }
+    &:active {
+    background: #b26200;
+    }
+}
+
